@@ -4,7 +4,7 @@ En este programa, el usuario ingresará su edad y si es fin de semana o no.
 El programa calculará el precio de la entrada al cine basado en la edad del usuario
  y si es fin de semana o no, usando una estructura de control if/else anidada.
 """
-def calcular_precio_entrada():
+
     #TODO 1: Pedir al usuario su edad y usar un variable para ver si es fin de semana
     #  Intenta usar la funcion .lower() por si el usuario escribe "Sí" o "sí" o "SI" o algo similar. 
 

@@ -5,10 +5,26 @@ y el número de créditos de cada materia. El programa convertirá cada porcenta
 en una escala de 4.0, y luego calculará el GPA final del semestre basado en los créditos de cada materia.
 """
 
-# Función, con un parametro, para convertir porcentaje a GPA en una escala de 4.0
+#para convertir porcentaje a GPA en una escala de 4.0
 def porcentaje_a_gpa(porcentaje):
     if porcentaje >= 93:
         return 4.0
+    elif porcentaje >= 90:
+        return 3.7
+    elif porcentaje >= 87:
+        return 3.3
+    elif porcentaje >= 83:
+        return 3.0
+    elif porcentaje >= 80:
+        return 2.7
+    elif porcentaje >= 76:
+        return 2.3
+    elif porcentaje >= 73:
+        return 2.0
+    elif porcentaje >= 70:
+        return 1.7
+    else:
+        return 1.0
     # TODO 1: Completa la función para convertir el porcentaje a GPA usando la escala estándar.
 
     else:
