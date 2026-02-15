@@ -7,13 +7,31 @@ El programa calculará el precio de la entrada al cine basado en la edad del usu
 
     #TODO 1: Pedir al usuario su edad y usar un variable para ver si es fin de semana
     #  Intenta usar la funcion .lower() por si el usuario escribe "Sí" o "sí" o "SI" o algo similar. 
+edad = int(input("Ingresa tu edad: "))
+fin_semana = input("¿Es fin de semana? (si/no): ").lower()
 
     #TODO 2: Usar if/else anidados para calcular el precio de la entrada
     #  al cine basado en las siguientes reglas:
     # menores de 12 años pagan $5 los fines de semana y $3 entre semana,
     # mayores de 65 años pagan $6 los fines de semana y $4 entre semana,
     # y todos los demás pagan $10 los fines de semana y $7 entre semana.
+if edad < 12:
+    if fin_semana == "si" or fin_semana == "sí":
+        precio = 5.00
+    else:
+        precio = 3.00
 
+elif edad > 65:
+    if fin_semana == "si" or fin_semana == "sí":
+        precio = 6.00
+    else:
+        precio = 4.00
+
+else:
+    if fin_semana == "si" or fin_semana == "sí":
+        precio = 10.00
+    else:
+        precio = 7.00
     #TODO 3: Imprimir el precio de la entrada al cine con un mensaje claro.
     # Por ejemplo, "El precio de tu entrada es: $5.00" intenta usar un f string para formatear.
 
