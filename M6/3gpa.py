@@ -25,13 +25,10 @@ def porcentaje_a_gpa(porcentaje):
         return 1.7
     else:
         return 1.0
-    # TODO 1: Completa la función para convertir el porcentaje a GPA usando la escala estándar.
-
-    else:
-        return 0.0
+    # TODO 1: Completa la función para convertir el porcentaje a GPA usando la escala estándar. 
 
 # TODO #2: Pedir cuántas materias tiene el usuario, y asignarlo a un variable (recuerda convertirlo a un entero).
-
+num_materias = int(input("¿Cuántas materias tienes este semestre? "))  
 
 
 # Inicializar variables para acumular puntos y créditos
@@ -52,11 +49,15 @@ for i in range(num_materias):
 # entonces calcula el GPA final y muestra el resultado
 # de lo contrario muestra un mensaje indicando que no se ingresaron materias válidas.
 # Si no, imprimir un mensaje indicando que no se ingresaron materias válidas o algo similar.
-
+if total_creditos > 0:
+    gpa_final = total_puntos / total_creditos
+    print(f"\nTu GPA estimado para el semestre es: {gpa_final:.2f}")
+else:
+    print("No se ingresaron materias válidas.")
 # TODO #4: En que otra situacion podrias usar una funcion como esta?
-# 
-# 
-#     
+# Sistemas Escolares
+# Portales Academicos
+# Apps de Seguimientos de notas    
 """
 #Salida esperada
 ¿Cuántas materias tienes este semestre? 3
