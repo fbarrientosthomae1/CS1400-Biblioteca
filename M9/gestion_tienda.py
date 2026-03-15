@@ -14,7 +14,16 @@ def agregar_producto(inventario, nombre, precio):
     """
     Agrega o actualiza un producto en el diccionario.
     Maneja el error si el precio no es un número.
+    
+    Args:
+        inventario (dict): Diccionario donde se guardan los productos.
+        nombre (str): Nombre del producto a agregar.
+        precio (str/int/float): Valor del producto que será convertido a float.
+        
+    Returns:
+        bool: True si el precio era válido y se guardó, False si hubo un ValueError.
     """
+
     try:
         # Convertimos a float para asegurar que sea un número
         precio_num = float(precio)
