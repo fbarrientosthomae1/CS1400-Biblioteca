@@ -2,7 +2,7 @@
 import datetime
 # Aqui tu funcion menu()
 def menu():
-    print("\n--- MENÚ DEL DIARIO ---")
+    print("\n--- MI DIARIO PERSONAL ---")
     print("1. Escribir una nueva entrada")
     print("2. Leer el diario completo")
     print("3. Salir")
@@ -49,6 +49,3 @@ while True:
     # Entrada de datos
     # Guardar en archivo
     # Leer el archivo 
-
-    
-   
