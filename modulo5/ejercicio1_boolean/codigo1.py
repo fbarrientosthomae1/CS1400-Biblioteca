@@ -1,27 +1,33 @@
-# Practicando lógica booleana en Python aprendiendo a usar "and", "or" y "not"
+# Practicando lógica booleana en Python: "and", "or" y "not"
 
-# Declaracion de valores o inicialización de Valores para probar diferentes combinaciones
+# Inicialización de Valores
 edad = 16
 tiene_permiso = True
 es_finde = False
 
 # TODO 1: Usa una expresión booleana con "and"
-# Por ejemplo: ¿Puede salir hoy solo si tiene 18 años o más Y si tiene permiso?
+# Condición: 18 años o más Y tiene permiso
+puede_salir_estricto = edad >= 18 and tiene_permiso
+print(f"¿Puede salir bajo la regla estricta (18+ y permiso)?: {puede_salir_estricto}")
 
 
-
-# TODO 2: Usa una expresión booleana con "or" para permitir salir si es fin de semana o tiene permiso
-
-
-
-# TODO 3: Usa una expresión booleana con "not" para negar una condición
-# Por ejemplo: De ninguna manera tiene permiso
+# TODO 2: Usa una expresión booleana con "or"
+# Condición: Es fin de semana O tiene permiso
+puede_salir_flexible = es_finde or tiene_permiso
+print(f"¿Puede salir bajo la regla flexible (Finde o permiso)?: {puede_salir_flexible}")
 
 
+# TODO 3: Usa una expresión booleana con "not"
+# Condición: De ninguna manera tiene permiso
+no_tiene_permiso = not tiene_permiso
+print(f"¿Es verdad que NO tiene permiso?: {no_tiene_permiso}")
 
-# TODO 5: Escribe tu propia condición con and, or o not e imprimelo a la pantalla.
-# Ejemplo: ¿Puede conducir si tiene 18 o más y tiene permiso? u cualquier otra idea. 
 
+# TODO 5: Escribe tu propia condición
+# Situación: ¿Puede jugar videojuegos? 
+# Condición: Si es fin de semana O (si ha terminado su tarea Y tiene permiso)
+# Nota: Aquí usamos paréntesis para agrupar lógica, igual que en matemáticas.
+termino_tarea = True
+puede_jugar = es_finde or (termino_tarea and tiene_permiso)
 
-
-
+print(f"¿Puede jugar videojuegos hoy?: {puede_jugar}")
